@@ -4,9 +4,35 @@
         <meta charset = "utf-8">
         <title>Home | Supernova Studios</title>
         <link href = "style.css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i|Space+Mono:400,700" rel="stylesheet">
     </head>
     <body>
-        <h1>Lazy Home Page - did something send?</h1>
+        <header>
+            <h1>Supernova Studios</h1>
+        </header>
+        <div id = "header">
+            <h1>Supernova Studios</h1>
+        </div>
+        <nav>
+            <div class = "container">
+                <a data-rippleEffect = "button">Home</a>
+                <a data-rippleEffect = "button">Members</a>
+                <a data-rippleEffect = "button">Projects</a>
+                <div id = "marker"></div>
+            </div>
+        </nav>
+        <main>
+            <div class = "card">
+                <h1>About</h1>
+                <p>We are a group of amateur developers committed to learning programming and helping others understand one of the most fundamental parts of the connected world.</p>
+            </div>
+            <div class = "card">
+                <h1>Contact</h1>
+                <a href = "https://discord.gg/UndFkpV">Discord Server</a><br>
+                <a href = "https://github.com/SupernovaStudios">GitHub</a><br>
+                <a style = "cursor:pointer;" onclick = "window.open('mailto:supernovastudios2017@gmail.com');">Email</a>
+            </div>
+        </main>
         <script src = "script.js"></script>
     </body>
 </html>
