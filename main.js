@@ -1,0 +1,2 @@
+document.body.innerHTML = '<header><h1>Supernova Studios</h1></header><div id = "header"><h1>Supernova Studios</h1></div><nav><h1>Supernova Studios</h1><div class = "container"><a data-rippleEffect = "button">Home</a><a data-rippleEffect = "button">Members</a><a data-rippleEffect = "button">Projects</a><div id = "marker"></div></div></nav>' + document.body.innerHTML;
+document.head.innerHTML += '<link href = "../style.css" rel = "stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i|Space+Mono:400,700" rel="stylesheet">'

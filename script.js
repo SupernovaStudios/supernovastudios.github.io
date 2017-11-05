@@ -1,15 +1,16 @@
+locs = ["/","/members","/projects"]
 var updateMarker = function(index){
     marker = document.getElementById("marker");
     marker.style.position = "absolute";
     marker.style.left = document.querySelectorAll("nav .container a")[index].offsetLeft + "px";
     marker.style.width = document.querySelectorAll("nav .container a")[index].offsetWidth + "px";
 };
-updateMarker(0);
 
 var navLinks = document.querySelectorAll("nav a");
 var navLink = function(index){
     navLinks[index].addEventListener("click",function(){
         updateMarker(index);
+        setTimeout(function(){window.location = locs[index]},300);
     })
 }
 for(var i = 0; i < navLinks.length; i++){
@@ -20,26 +21,37 @@ document.addEventListener("scroll",function(){
     if(window.scrollY > 256 && window.scrollY <= 320){
         var header = document.querySelector("header");
         var nav = document.querySelector("nav");
+        var navh = document.querySelector("nav h1");
         header.style.position = "absolute";
         header.style.top = "192px";
         header.style.animation = "none";
         nav.style.position = "absolute";
         nav.style.top = "256px";
+        navh.style.opacity = 0;
     }else if(window.scrollY > 320){
         var nav = document.querySelector("nav");
+        var navh = document.querySelector("nav h1");
         nav.style.position = "fixed";
         nav.style.top="0px";
         nav.style.zIndex = 3;
         nav.style.animation = "none";
+        navh.style.opacity = 1;
     }else{
         var nav = document.querySelector("nav");
         var header = document.querySelector("header");
+        var navh = document.querySelector("nav h1");
         nav.style.position = "absolute";
         nav.style.top = "256px";
         header.style.position = "fixed";
         header.style.top = "0px";
+        navh.style.opacity = 0;
     }
 });
+
+setTimeout(function(){
+    updateMarker(0);
+},300)
+
 
 // Get all the elements that requiere the effect
 var rippleButton = document.querySelectorAll('[data-rippleEffect="button"]');
