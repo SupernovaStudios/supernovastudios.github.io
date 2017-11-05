@@ -48,10 +48,6 @@ document.addEventListener("scroll",function(){
     }
 });
 
-setTimeout(function(){
-    updateMarker(0);
-},300)
-
 
 // Get all the elements that requiere the effect
 var rippleButton = document.querySelectorAll('[data-rippleEffect="button"]');
