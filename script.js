@@ -16,6 +16,31 @@ for(var i = 0; i < navLinks.length; i++){
     navLink(i);
 }
 
+document.addEventListener("scroll",function(){
+    if(window.scrollY > 256 && window.scrollY <= 320){
+        var header = document.querySelector("header");
+        var nav = document.querySelector("nav");
+        header.style.position = "absolute";
+        header.style.top = "192px";
+        header.style.animation = "none";
+        nav.style.position = "absolute";
+        nav.style.top = "256px";
+    }else if(window.scrollY > 320){
+        var nav = document.querySelector("nav");
+        nav.style.position = "fixed";
+        nav.style.top="0px";
+        nav.style.zIndex = 3;
+        nav.style.animation = "none";
+    }else{
+        var nav = document.querySelector("nav");
+        var header = document.querySelector("header");
+        nav.style.position = "absolute";
+        nav.style.top = "256px";
+        header.style.position = "fixed";
+        header.style.top = "0px";
+    }
+});
+
 // Get all the elements that requiere the effect
 var rippleButton = document.querySelectorAll('[data-rippleEffect="button"]');
 
