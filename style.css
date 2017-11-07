@@ -43,7 +43,7 @@ nav{
     }
 }
 header h1{
-    font-family:"Space Mono";
+    font-family:"Product Sans";
     margin:0px;
     text-align:center;
     color:white;
@@ -51,7 +51,7 @@ header h1{
     line-height:64px;
 }
 nav h1{
-    font-family:"Space Mono";
+    font-family:"Product Sans";
     margin:0px;
     color:white;
     font-size:20px;
@@ -62,7 +62,7 @@ nav h1{
     transition:all .3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 nav a{
-    font-family:"Space Mono";
+    font-family:"Product Sans";
     line-height:64px;
     color:white;
     font-weight:700;
@@ -97,7 +97,7 @@ nav .container{
     left:50%;
     transform:translate(-50%,-50%);
     color:white;
-    font-family:"Space Mono";
+    font-family:"Product Sans";
     white-space: nowrap;
     margin:0px;
     text-shadow:1px 3px 10px black;
@@ -131,7 +131,7 @@ main{
     }
 }
 main h1{
-    font-family:"Space Mono";
+    font-family:"Product Sans";
     margin:4px 0px;
 }
 .card{
