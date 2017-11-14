@@ -124,10 +124,10 @@ a{
     text-decoration:none;
 }
  a:link {
-    color: ##00796B;
+    color: #00796B;
 }
 a:visited {
-    color: ##0D47A1;
+    color: #0D47A1;
 }
 a:hover, a:active{
     color: #29B6F6;
